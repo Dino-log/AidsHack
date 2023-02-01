@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nohurtcarn",
+  "version": "${version}",
+  "name": "NoHurtCam",
+  "description": "Removes the damage Screenshake",
+  "authors": [
+    "UltraBlackLinux"
+  ],
+  "contact": {
+    "homepage": "https://github.com/UltraBlackLinux/noHurtCam",
+    "issues": "https://github.com/UltraBlackLinux/noHurtCam/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/aidshack/hurt.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cc.aidshack.AidsHackClient"
+    ]
+  },
+  "mixins": [
+    "AidsHack.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  }
+}
